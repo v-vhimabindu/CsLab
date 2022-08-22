@@ -197,32 +197,7 @@
                     "name": "DimCustomer_DF",
                     "interface": "rest",
                     "definitionFilePath": "https://raw.githubusercontent.com/jchinchillaMSFT/ww-csu-psk-synapse-retail/main/dataflow/DimCustomer_DF.json"
-                },
-                {
-                    "name": "DimDate_DF",
-                    "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/jchinchillaMSFT/ww-csu-psk-synapse-retail/main/dataflow/DimDate_DF.json"
-                },
-                {
-                    "name": "DimGeography_DF",
-                    "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/jchinchillaMSFT/ww-csu-psk-synapse-retail/main/dataflow/DimGeography_DF.json"
-                },
-                {
-                    "name": "DimProduct_DF",
-                    "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/jchinchillaMSFT/ww-csu-psk-synapse-retail/main/dataflow/DimProduct_DF.json"
-                },
-                {
-                    "name": "FactSales_DF",
-                    "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/jchinchillaMSFT/ww-csu-psk-synapse-retail/main/dataflow/FactSales_DF.json"
-                },
-                {
-                    "name": "adworks_DF",
-                    "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/jchinchillaMSFT/ww-csu-psk-synapse-retail/main/dataflow/adworks_DF.json"
-                }
+                }               
             ],
             "databases": [
                 {
@@ -314,7 +289,14 @@
                         }
                     ]
                 }
-            ]
+            ],
+             "pipelines": [
+                {
+                    "name": "TripFaresDataPipeline",
+                    "definitionFilePath": "https://github.com/jchinchillaMSFT/ww-csu-psk-synapse-retail/blob/main/pipeline/3_0%20adworkstarget%20Starting%20Pipeline.json",
+                    "tokens": []
+                }
+            ],
         }
     },
     {
