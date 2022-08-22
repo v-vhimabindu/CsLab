@@ -156,7 +156,18 @@
             
             
             ],
-            "notebooks": [],
+            "notebooks": [
+                {
+                    "name": "DimChannel_DF",
+                    "interface": "rest",
+                    "definitionFilePath": "https://github.com/jchinchillaMSFT/ww-csu-psk-synapse-retail/blob/main/notebook/CSV%20-%20Product%20recommendations.json"
+                },
+                {
+                   "name": "DimChannel_DF",
+                    "interface": "rest",
+                    "definitionFilePath": "https://github.com/jchinchillaMSFT/ww-csu-psk-synapse-retail/blob/main/notebook/LakeDB%20-%20Product%20recommendations.json"
+                },
+            ],
             "linkedServices":[ 
                 {
                     "name": "AzureBlobStorageSCD",                   
